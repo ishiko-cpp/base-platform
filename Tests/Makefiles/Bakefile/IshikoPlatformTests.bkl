@@ -18,8 +18,14 @@ program IshikoPlatformTests : IshikoTestFrameworkCore
         libs += IshikoTestFrameworkCore IshikoProcess IshikoErrors boost_filesystem boost_system;
     }
 
+    headers
+    {
+        ../../Source/OSTests.h
+    }
+
     sources
     {
         ../../Source/main.cpp
+        ../../Source/OSTests.cpp
     }
 }

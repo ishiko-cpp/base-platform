@@ -74,11 +74,14 @@ ISHIKO_CPP_TESTFRAMEWORK_ROOT ?= $(ISHIKO_CPP)/TestFramework
 
 all: $(_builddir)IshikoPlatformTests
 
-$(_builddir)IshikoPlatformTests: $(_builddir)IshikoPlatformTests_main.o
-	$(CXX) -o $@ $(LDFLAGS) $(_builddir)IshikoPlatformTests_main.o -L$(ISHIKO_CPP_ERRORS_ROOT)/Lib -L$(BOOST_ROOT)/lib -L$(ISHIKO_CPP_PROCESS_ROOT)/Lib -L$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/Lib -lIshikoTestFrameworkCore -lIshikoProcess -lIshikoErrors -lboost_filesystem -lboost_system -pthread
+$(_builddir)IshikoPlatformTests: $(_builddir)IshikoPlatformTests_main.o $(_builddir)IshikoPlatformTests_OSTests.o
+	$(CXX) -o $@ $(LDFLAGS) $(_builddir)IshikoPlatformTests_main.o $(_builddir)IshikoPlatformTests_OSTests.o -L$(ISHIKO_CPP_ERRORS_ROOT)/Lib -L$(BOOST_ROOT)/lib -L$(ISHIKO_CPP_PROCESS_ROOT)/Lib -L$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/Lib -lIshikoTestFrameworkCore -lIshikoProcess -lIshikoErrors -lboost_filesystem -lboost_system -pthread
 
 $(_builddir)IshikoPlatformTests_main.o: ../../Source/main.cpp
 	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -pthread -I$(ISHIKO_CPP_ERRORS_ROOT)/Include -I$(BOOST_ROOT)/include -I$(ISHIKO_CPP_PROCESS_ROOT)/Include -I$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/Include -std=c++11 ../../Source/main.cpp
+
+$(_builddir)IshikoPlatformTests_OSTests.o: ../../Source/OSTests.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -pthread -I$(ISHIKO_CPP_ERRORS_ROOT)/Include -I$(BOOST_ROOT)/include -I$(ISHIKO_CPP_PROCESS_ROOT)/Include -I$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/Include -std=c++11 ../../Source/OSTests.cpp
 
 clean:
 	rm -f $(_builddir)*.o
