@@ -13,6 +13,11 @@ class OSTests : public Ishiko::Tests::TestSequence
 {
 public:
     OSTests(const Ishiko::Tests::TestNumber& number, const Ishiko::Tests::TestEnvironment& environment);
+
+private:
+    static void IshikoOSTest1(Ishiko::Tests::Test& test);
+    static void IshikoOSTest2(Ishiko::Tests::Test& test);
+    static void IshikoOSTest3(Ishiko::Tests::Test& test);
 };
 
 #endif
