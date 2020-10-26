@@ -13,6 +13,8 @@
 #elif defined(_WIN32)
 #define ISHIKO_OS_WINDOWS 2
 #define ISHIKO_OS ISHIKO_OS_WINDOWS
+#else
+#error Unsupported or unrecognized OS
 #endif
 
 #endif
