@@ -5,3 +5,10 @@
 */
 
 #include "OSTests.h"
+
+using namespace Ishiko::Tests;
+
+OSTests::OSTests(const TestNumber& number, const TestEnvironment& environment)
+    : TestSequence(number, "OS tests", environment)
+{
+}
