@@ -5,6 +5,7 @@
 */
 
 #include "OSTests.h"
+#include "CompilerTests.h"
 #include "Ishiko/TestFramework/TestFrameworkCore.h"
 
 using namespace Ishiko::Tests;
@@ -15,6 +16,7 @@ int main(int argc, char* argv[])
 
     TestSequence& theTests = theTestHarness.tests();
     theTests.append<OSTests>();
+    theTests.append<CompilerTests>();
 
     return theTestHarness.run();
 }
