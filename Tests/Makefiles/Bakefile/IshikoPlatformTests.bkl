@@ -21,11 +21,13 @@ program IshikoPlatformTests : IshikoPlatform, IshikoTestFrameworkCore
 
     headers
     {
+        ../../Source/CompilerTests.h
         ../../Source/OSTests.h
     }
 
     sources
     {
+        ../../Source/CompilerTests.cpp
         ../../Source/main.cpp
         ../../Source/OSTests.cpp
     }
