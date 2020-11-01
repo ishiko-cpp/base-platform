@@ -27,7 +27,7 @@ void CompilerTests::IshikoCompilerTest1(Test& test)
     value = 2;
 #endif
 
-#if defined(_GNUC_)
+#if defined(__GNUC__)
     ISHTF_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
     ISHTF_FAIL_IF_NEQ(value, 2);
@@ -47,7 +47,7 @@ void CompilerTests::IshikoCompilerTest2(Test& test)
     value = 2;
 #endif
 
-#if defined(_GNUC_)
+#if defined(__GNUC__)
     ISHTF_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
     ISHTF_FAIL_IF_NEQ(value, 2);
@@ -67,7 +67,7 @@ void CompilerTests::IshikoCompilerTest3(Test& test)
     value = 2;
 #endif
 
-#if defined(_GNUC_)
+#if defined(__GNUC__)
     ISHTF_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
     ISHTF_FAIL_IF_NEQ(value, 2);
