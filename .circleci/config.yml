@@ -10,6 +10,9 @@ jobs:
       - checkout:
           path: /Ishiko-cpp/Platform
       - run:
+          name: Build
+          command: cd /Ishiko-cpp/Platform/Makefiles/GNUmakefile && make
+      - run:
           name: "Checkout Ishiko-cpp/Errors test dependency"
           command: cd /Ishiko-cpp && git clone https://github.com/Ishiko-cpp/Errors.git
       - run:
