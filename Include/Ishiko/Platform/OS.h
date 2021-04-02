@@ -8,13 +8,13 @@
 #define _ISHIKO_PLATFORM_OS_H_
 
 #if defined(__linux__)
-#define ISHIKO_OS_LINUX 1
-#define ISHIKO_OS ISHIKO_OS_LINUX
+    #define ISHIKO_OS_LINUX 1
+    #define ISHIKO_OS ISHIKO_OS_LINUX
 #elif defined(_WIN32)
-#define ISHIKO_OS_WINDOWS 2
-#define ISHIKO_OS ISHIKO_OS_WINDOWS
+    #define ISHIKO_OS_WINDOWS 2
+    #define ISHIKO_OS ISHIKO_OS_WINDOWS
 #else
-#error Unsupported or unrecognized OS
+    #error Unsupported or unrecognized OS
 #endif
 
 #endif
