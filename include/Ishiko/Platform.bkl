@@ -1,10 +1,10 @@
 setting ISHIKO_CPP_PLATFORM_ROOT
 {
     help = "Path to the Ishiko Platform installation";
-    default = '$(ISHIKO_CPP)/Platform';
+    default = '$(ISHIKO_CPP)/platform';
 }
 
 template IshikoPlatform
 {
-    includedirs += $(ISHIKO_CPP_PLATFORM_ROOT)/Include;
+    includedirs += $(ISHIKO_CPP_PLATFORM_ROOT)/include;
 }
