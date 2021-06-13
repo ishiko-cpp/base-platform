@@ -9,7 +9,7 @@ library IshikoPlatform
 {
     archs = x86 x86_64;
 
-    includedirs += ../../Include/Ishiko/Platform;
+    includedirs += ../../include/Ishiko/Platform;
 
     if ($(toolset) == gnu)
     {
@@ -29,9 +29,9 @@ library IshikoPlatform
 
     headers
     {
-        ../../Include/Ishiko/Platform.h
+        ../../include/Ishiko/Platform.h
 
-        ../../Include/Ishiko/Platform/Compilers.h
-        ../../Include/Ishiko/Platform/OS.h
+        ../../include/Ishiko/Platform/Compilers.h
+        ../../include/Ishiko/Platform/OS.h
     }
 }
