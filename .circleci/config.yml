@@ -25,9 +25,6 @@ jobs:
           name: "Checkout Ishiko-cpp/TestFramework test dependency"
           command: cd /Ishiko-cpp && git clone https://github.com/Ishiko-cpp/TestFramework.git
       - run:
-          name: "Build Ishiko-cpp/Process test dependency"
-          command: cd /Ishiko-cpp/Process/Makefiles/GNUmakefile && make
-      - run:
           name: "Build Ishiko-cpp/TestFramework test dependency"
           command: cd /Ishiko-cpp/TestFramework/Core/Makefiles/GNUmakefile && make
       - run:
