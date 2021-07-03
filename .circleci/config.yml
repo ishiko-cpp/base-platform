@@ -10,7 +10,7 @@ jobs:
       - checkout:
           path: /projects/ishiko/cpp/platform
       - run:
-          name: Build
+          name: "Build: Ishiko/C++ Platform"
           command: cd /projects/ishiko/cpp/platform/build/gnumake && make
       - run:
           name: "Install test dependency: Ishiko/C++ Errors"
@@ -37,11 +37,8 @@ jobs:
           name: "Install test dependency: Ishiko/C++ Tests"
           command: cd /projects/ishiko/cpp && git clone https://github.com/ishiko-cpp/tests.git && cd tests/core/build/gnumake && make
       - run:
-          name: Test build
-          command: cd /projects/ishiko/cpp/platform/tests/build/GNUmakefile && make
-      - run:
-          name: Run the tests
-          command: cd /projects/ishiko/cpp/platform/tests/build/GNUmakefile && ./IshikoPlatformTests
+          name: "Test: Ishiko/C++ Platform"
+          command: cd /projects/ishiko/cpp/platform/tests/build/GNUmakefile && make && ./IshikoPlatformTests
 workflows:
   version: 2
   continuous_build:
