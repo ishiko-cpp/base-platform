@@ -1,7 +1,7 @@
 /*
     Copyright (c) 2020 Xavier Leclercq
     Released under the MIT License
-    See https://github.com/Ishiko-cpp/Platform/blob/master/LICENSE.txt
+    See https://github.com/ishiko-cpp/platform/blob/main/LICENSE.txt
 */
 
 #include "CompilerTests.h"
