@@ -38,7 +38,7 @@ jobs:
           command: cd /projects/ishiko/cpp && git clone https://github.com/ishiko-cpp/tests.git && cd tests/core/build/gnumake && make
       - run:
           name: "Test: Ishiko/C++ Platform"
-          command: cd /projects/ishiko/cpp/platform/tests/build/GNUmakefile && make && ./IshikoPlatformTests
+          command: cd /projects/ishiko/cpp/platform/tests/build/gnumake && make && ./IshikoPlatformTests
 workflows:
   version: 2
   continuous_build:
