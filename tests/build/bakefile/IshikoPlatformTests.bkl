@@ -1,0 +1,34 @@
+import ../../../include/Ishiko/Platform.bkl;
+ishikopath = envvar("ISHIKO_CPP");
+import $(ishikopath)/tests/include/Ishiko/Tests/Core.bkl;
+
+toolsets = gnu vs2017 vs2015 vs2013;
+
+gnu.makefile = ../gnumake/GNUmakefile;
+vs2017.solutionfile = ../vc15/IshikoPlatformTests.sln;
+vs2015.solutionfile = ../vc14/IshikoPlatformTests.sln;
+vs2013.solutionfile = ../vc12/IshikoPlatformTests.sln;
+
+program IshikoPlatformTests : IshikoPlatform, IshikoTestsCore
+{
+    archs = x86 x86_64;
+
+    if ($(toolset) == gnu)
+    {
+        cxx-compiler-options = "-std=c++11";
+        libs += IshikoTestsCore IshikoProcess IshikoErrors boost_filesystem boost_system;
+    }
+
+    headers
+    {
+        ../../src/CompilerTests.h
+        ../../src/OSTests.h
+    }
+
+    sources
+    {
+        ../../src/CompilerTests.cpp
+        ../../src/main.cpp
+        ../../src/OSTests.cpp
+    }
+}
