@@ -17,21 +17,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\CompilerTests.h">
+    <ClInclude Include="..\..\src\CompilerTests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\OSTests.h">
+    <ClInclude Include="..\..\src\OSTests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\CompilerTests.cpp">
+    <ClCompile Include="..\..\src\CompilerTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\main.cpp">
+    <ClCompile Include="..\..\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\OSTests.cpp">
+    <ClCompile Include="..\..\src\OSTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

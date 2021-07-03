@@ -4,10 +4,10 @@ import $(ishikopath)/tests/include/Ishiko/Tests/Core.bkl;
 
 toolsets = gnu vs2017 vs2015 vs2013;
 
-gnu.makefile = ../GNUmakefile/GNUmakefile;
-vs2017.solutionfile = ../VC15/IshikoPlatformTests.sln;
-vs2015.solutionfile = ../VC14/IshikoPlatformTests.sln;
-vs2013.solutionfile = ../VC12/IshikoPlatformTests.sln;
+gnu.makefile = ../gnumake/GNUmakefile;
+vs2017.solutionfile = ../vc15/IshikoPlatformTests.sln;
+vs2015.solutionfile = ../vc14/IshikoPlatformTests.sln;
+vs2013.solutionfile = ../vc12/IshikoPlatformTests.sln;
 
 program IshikoPlatformTests : IshikoPlatform, IshikoTestsCore
 {
@@ -21,14 +21,14 @@ program IshikoPlatformTests : IshikoPlatform, IshikoTestsCore
 
     headers
     {
-        ../../Source/CompilerTests.h
-        ../../Source/OSTests.h
+        ../../src/CompilerTests.h
+        ../../src/OSTests.h
     }
 
     sources
     {
-        ../../Source/CompilerTests.cpp
-        ../../Source/main.cpp
-        ../../Source/OSTests.cpp
+        ../../src/CompilerTests.cpp
+        ../../src/main.cpp
+        ../../src/OSTests.cpp
     }
 }
