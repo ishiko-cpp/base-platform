@@ -32,6 +32,6 @@ jobs:
           command: cd /projects/ishiko/cpp/platform/tests/build/GNUmakefile && ./IshikoPlatformTests
 workflows:
   version: 2
-    hbuild:
-      jobs:
-        - build
+  continuous_build:
+    jobs:
+      - build
