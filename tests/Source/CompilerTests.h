@@ -1,13 +1,13 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
-    See https://github.com/Ishiko-cpp/Platform/blob/master/LICENSE.txt
+    See https://github.com/ishiko-cpp/platform/blob/main/LICENSE.txt
 */
 
 #ifndef _ISHIKO_PLATFORM_TESTS_COMPILERTESTS_H_
 #define _ISHIKO_PLATFORM_TESTS_COMPILERTESTS_H_
 
-#include "Ishiko/TestFramework/TestFrameworkCore.h"
+#include <Ishiko/Tests/Core.h>
 
 class CompilerTests : public Ishiko::Tests::TestSequence
 {
