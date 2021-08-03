@@ -28,7 +28,7 @@ void OSTests::IshikoOSTest1(Test& test)
 #endif
 
 #if defined(__linux__)
-    ISHTF_FAIL_IF_NEQ(value, 1);
+    ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
     ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
