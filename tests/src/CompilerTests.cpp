@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/platform/blob/main/LICENSE.txt
 */
@@ -28,13 +28,13 @@ void CompilerTests::IshikoCompilerTest1(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHTF_FAIL_IF_NEQ(value, 1);
+    ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
-    ISHTF_FAIL_IF_NEQ(value, 2);
+    ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
-    ISHTF_PASS();
+    ISHIKO_PASS();
 }
 
 void CompilerTests::IshikoCompilerTest2(Test& test)
@@ -48,13 +48,13 @@ void CompilerTests::IshikoCompilerTest2(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHTF_FAIL_IF_NEQ(value, 1);
+    ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
-    ISHTF_FAIL_IF_NEQ(value, 2);
+    ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
-    ISHTF_PASS();
+    ISHIKO_PASS();
 }
 
 void CompilerTests::IshikoCompilerTest3(Test& test)
@@ -68,11 +68,11 @@ void CompilerTests::IshikoCompilerTest3(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHTF_FAIL_IF_NEQ(value, 1);
+    ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
-    ISHTF_FAIL_IF_NEQ(value, 2);
+    ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
-    ISHTF_PASS();
+    ISHIKO_PASS();
 }
