@@ -32,7 +32,7 @@ void OSTests::IshikoOSTest1(Test& test)
 #elif defined(_WIN32)
     ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
     ISHIKO_PASS();
 }
@@ -72,7 +72,7 @@ void OSTests::IshikoOSTest3(Test& test)
 #elif defined(_WIN32)
     ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
     ISHIKO_PASS();
 }
