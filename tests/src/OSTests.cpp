@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/platform/blob/main/LICENSE.txt
 */
@@ -28,13 +28,13 @@ void OSTests::IshikoOSTest1(Test& test)
 #endif
 
 #if defined(__linux__)
-    ISHTF_FAIL_IF_NEQ(value, 1);
+    ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
-    ISHTF_FAIL_IF_NEQ(value, 2);
+    ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
-    ISHTF_PASS();
+    ISHIKO_PASS();
 }
 
 void OSTests::IshikoOSTest2(Test& test)
@@ -48,13 +48,13 @@ void OSTests::IshikoOSTest2(Test& test)
 #endif
 
 #if defined(__linux__)
-    ISHTF_FAIL_IF_NEQ(value, 1);
+    ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
-    ISHTF_FAIL_IF_NEQ(value, 2);
+    ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
-    ISHTF_PASS();
+    ISHIKO_PASS();
 }
 
 void OSTests::IshikoOSTest3(Test& test)
@@ -68,11 +68,11 @@ void OSTests::IshikoOSTest3(Test& test)
 #endif
 
 #if defined(__linux__)
-    ISHTF_FAIL_IF_NEQ(value, 1);
+    ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
-    ISHTF_FAIL_IF_NEQ(value, 2);
+    ISHIKO_FAIL_IF_NEQ(value, 2);
 #else
-    ISHTF_FAIL();
+    ISHIKO_FAIL();
 #endif
-    ISHTF_PASS();
+    ISHIKO_PASS();
 }
