@@ -1,11 +1,11 @@
 /*
     Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
-    See https://github.com/ishiko-cpp/platform/blob/main/LICENSE.txt
+    See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#ifndef _ISHIKO_PLATFORM_TESTS_COMPILERTESTS_H_
-#define _ISHIKO_PLATFORM_TESTS_COMPILERTESTS_H_
+#ifndef _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_H_
+#define _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_H_
 
 #include <Ishiko/Tests/Core.h>
 
