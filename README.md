@@ -1,4 +1,4 @@
-# Ishiko/C++ Platform
+# Ishiko/C++ BasePlatform
 
 Code to handle differences between operating systems.
 
@@ -9,7 +9,7 @@ Code to handle differences between operating systems.
 
 ## Project Status
 
-[![ishiko-cpp](https://circleci.com/gh/ishiko-cpp/platform.svg?style=shield)](https://circleci.com/gh/ishiko-cpp/platform)
+[![ishiko-cpp](https://circleci.com/gh/ishiko-cpp/base-platform.svg?style=shield)](https://circleci.com/gh/ishiko-cpp/base-platform)
 
 This project is intended for use by its author only.
 
@@ -25,4 +25,4 @@ None.
 
 Copyright (c) 2020-2021 Xavier Leclercq\
 Released under the MIT License\
-See https://github.com/ishiko-cpp/platform/blob/main/LICENSE.txt
+See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
