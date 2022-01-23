@@ -12,7 +12,7 @@
 class OSTests : public Ishiko::Tests::TestSequence
 {
 public:
-    OSTests(const Ishiko::Tests::TestNumber& number, const Ishiko::Tests::TestEnvironment& environment);
+    OSTests(const Ishiko::Tests::TestNumber& number, const Ishiko::Tests::TestContext& context);
 
 private:
     static void IshikoOSTest1(Ishiko::Tests::Test& test);

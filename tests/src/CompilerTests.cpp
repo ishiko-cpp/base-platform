@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020-2021 Xavier Leclercq
+    Copyright (c) 2020-2022 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
@@ -9,8 +9,8 @@
 
 using namespace Ishiko::Tests;
 
-CompilerTests::CompilerTests(const TestNumber& number, const TestEnvironment& environment)
-    : TestSequence(number, "Compiler tests", environment)
+CompilerTests::CompilerTests(const TestNumber& number, const TestContext& context)
+    : TestSequence(number, "Compiler tests", context)
 {
     append<HeapAllocationErrorsTest>("ISHIKO_COMPILER test 1", IshikoCompilerTest1);
     append<HeapAllocationErrorsTest>("ISHIKO_COMPILER test 2", IshikoCompilerTest2);
