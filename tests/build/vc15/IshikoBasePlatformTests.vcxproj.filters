@@ -17,10 +17,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\CompilerTests.h">
+    <ClInclude Include="..\..\src\CompilerTests.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\OSTests.h">
+    <ClInclude Include="..\..\src\OSTests.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
