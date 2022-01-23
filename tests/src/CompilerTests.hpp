@@ -4,8 +4,8 @@
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#ifndef _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_H_
-#define _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_H_
+#ifndef _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_HPP_
+#define _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_HPP_
 
 #include <Ishiko/Tests/Core.hpp>
 

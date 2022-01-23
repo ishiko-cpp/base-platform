@@ -4,7 +4,7 @@
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#include "CompilerTests.h"
+#include "CompilerTests.hpp"
 #include "Ishiko/BasePlatform/Compilers.h"
 
 using namespace Ishiko::Tests;

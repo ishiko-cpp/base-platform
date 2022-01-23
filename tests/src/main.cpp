@@ -4,8 +4,8 @@
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#include "OSTests.h"
-#include "CompilerTests.h"
+#include "OSTests.hpp"
+#include "CompilerTests.hpp"
 #include <Ishiko/Tests/Core.hpp>
 
 using namespace Ishiko::Tests;

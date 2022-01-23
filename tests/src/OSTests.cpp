@@ -4,7 +4,7 @@
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#include "OSTests.h"
+#include "OSTests.hpp"
 #include "Ishiko/BasePlatform/OS.h"
 
 using namespace Ishiko::Tests;
