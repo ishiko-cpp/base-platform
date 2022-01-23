@@ -4,15 +4,15 @@
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#ifndef _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_H_
-#define _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_H_
+#ifndef _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_HPP_
+#define _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_HPP_
 
 #include <Ishiko/Tests/Core.hpp>
 
 class CompilerTests : public Ishiko::Tests::TestSequence
 {
 public:
-    CompilerTests(const Ishiko::Tests::TestNumber& number, const Ishiko::Tests::TestEnvironment& environment);
+    CompilerTests(const Ishiko::Tests::TestNumber& number, const Ishiko::Tests::TestContext& context);
 
 private:
     static void IshikoCompilerTest1(Ishiko::Tests::Test& test);
