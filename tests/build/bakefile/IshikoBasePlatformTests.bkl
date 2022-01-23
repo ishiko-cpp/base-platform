@@ -22,8 +22,8 @@ program IshikoBasePlatformTests : IshikoBasePlatform, IshikoTestsCore
 
     headers
     {
-        ../../src/CompilerTests.h
-        ../../src/OSTests.h
+        ../../src/CompilerTests.hpp
+        ../../src/OSTests.hpp
     }
 
     sources
