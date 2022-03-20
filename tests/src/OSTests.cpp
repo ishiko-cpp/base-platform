@@ -28,11 +28,11 @@ void OSTests::IshikoOSTest1(Test& test)
 #endif
 
 #if defined(__linux__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
     ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
-    ISHIKO_FAIL();
+    ISHIKO_TEST_FAIL();
 #endif
     ISHIKO_TEST_PASS();
 }
@@ -48,11 +48,11 @@ void OSTests::IshikoOSTest2(Test& test)
 #endif
 
 #if defined(__linux__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
     ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
-    ISHIKO_FAIL();
+    ISHIKO_TEST_FAIL();
 #endif
     ISHIKO_TEST_PASS();
 }
@@ -68,11 +68,11 @@ void OSTests::IshikoOSTest3(Test& test)
 #endif
 
 #if defined(__linux__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
     ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
-    ISHIKO_FAIL();
+    ISHIKO_TEST_FAIL();
 #endif
     ISHIKO_TEST_PASS();
 }

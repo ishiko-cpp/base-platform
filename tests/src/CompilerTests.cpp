@@ -28,7 +28,7 @@ void CompilerTests::IshikoCompilerTest1(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
     ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
@@ -48,7 +48,7 @@ void CompilerTests::IshikoCompilerTest2(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
     ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
@@ -68,7 +68,7 @@ void CompilerTests::IshikoCompilerTest3(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
     ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
