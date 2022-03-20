@@ -7,7 +7,7 @@
 #include "CompilerTests.hpp"
 #include "Ishiko/BasePlatform/Compilers.h"
 
-using namespace Ishiko::Tests;
+using namespace Ishiko;
 
 CompilerTests::CompilerTests(const TestNumber& number, const TestContext& context)
     : TestSequence(number, "Compiler tests", context)
@@ -28,13 +28,13 @@ void CompilerTests::IshikoCompilerTest1(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
-    ISHIKO_FAIL_IF_NEQ(value, 2);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
     ISHIKO_FAIL();
 #endif
-    ISHIKO_PASS();
+    ISHIKO_TEST_PASS();
 }
 
 void CompilerTests::IshikoCompilerTest2(Test& test)
@@ -48,13 +48,13 @@ void CompilerTests::IshikoCompilerTest2(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
-    ISHIKO_FAIL_IF_NEQ(value, 2);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
     ISHIKO_FAIL();
 #endif
-    ISHIKO_PASS();
+    ISHIKO_TEST_PASS();
 }
 
 void CompilerTests::IshikoCompilerTest3(Test& test)
@@ -68,11 +68,11 @@ void CompilerTests::IshikoCompilerTest3(Test& test)
 #endif
 
 #if defined(__GNUC__)
-    ISHIKO_FAIL_IF_NEQ(value, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 1);
 #elif defined(_MSC_VER)
-    ISHIKO_FAIL_IF_NEQ(value, 2);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
     ISHIKO_FAIL();
 #endif
-    ISHIKO_PASS();
+    ISHIKO_TEST_PASS();
 }
