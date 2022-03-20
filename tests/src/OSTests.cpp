@@ -7,7 +7,7 @@
 #include "OSTests.hpp"
 #include "Ishiko/BasePlatform/OS.h"
 
-using namespace Ishiko::Tests;
+using namespace Ishiko;
 
 OSTests::OSTests(const TestNumber& number, const TestContext& context)
     : TestSequence(number, "OS tests", context)
@@ -30,11 +30,11 @@ void OSTests::IshikoOSTest1(Test& test)
 #if defined(__linux__)
     ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
-    ISHIKO_FAIL_IF_NEQ(value, 2);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
     ISHIKO_FAIL();
 #endif
-    ISHIKO_PASS();
+    ISHIKO_TEST_PASS();
 }
 
 void OSTests::IshikoOSTest2(Test& test)
@@ -50,11 +50,11 @@ void OSTests::IshikoOSTest2(Test& test)
 #if defined(__linux__)
     ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
-    ISHIKO_FAIL_IF_NEQ(value, 2);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
     ISHIKO_FAIL();
 #endif
-    ISHIKO_PASS();
+    ISHIKO_TEST_PASS();
 }
 
 void OSTests::IshikoOSTest3(Test& test)
@@ -70,9 +70,9 @@ void OSTests::IshikoOSTest3(Test& test)
 #if defined(__linux__)
     ISHIKO_FAIL_IF_NEQ(value, 1);
 #elif defined(_WIN32)
-    ISHIKO_FAIL_IF_NEQ(value, 2);
+    ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
     ISHIKO_FAIL();
 #endif
-    ISHIKO_PASS();
+    ISHIKO_TEST_PASS();
 }

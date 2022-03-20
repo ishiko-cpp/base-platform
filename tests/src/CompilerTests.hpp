@@ -9,15 +9,15 @@
 
 #include <Ishiko/Tests/Core.hpp>
 
-class CompilerTests : public Ishiko::Tests::TestSequence
+class CompilerTests : public Ishiko::TestSequence
 {
 public:
-    CompilerTests(const Ishiko::Tests::TestNumber& number, const Ishiko::Tests::TestContext& context);
+    CompilerTests(const Ishiko::TestNumber& number, const Ishiko::TestContext& context);
 
 private:
-    static void IshikoCompilerTest1(Ishiko::Tests::Test& test);
-    static void IshikoCompilerTest2(Ishiko::Tests::Test& test);
-    static void IshikoCompilerTest3(Ishiko::Tests::Test& test);
+    static void IshikoCompilerTest1(Ishiko::Test& test);
+    static void IshikoCompilerTest2(Ishiko::Test& test);
+    static void IshikoCompilerTest3(Ishiko::Test& test);
 };
 
 #endif
