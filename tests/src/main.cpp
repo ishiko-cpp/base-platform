@@ -6,7 +6,7 @@
 
 #include "OSTests.hpp"
 #include "CompilerTests.hpp"
-#include <Ishiko/Tests/Core.hpp>
+#include <Ishiko/TestFramework/Core.hpp>
 
 using namespace Ishiko;
 
