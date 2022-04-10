@@ -7,7 +7,7 @@
 #ifndef _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_HPP_
 #define _ISHIKO_CPP_BASEPLATFORM_TESTS_COMPILERTESTS_HPP_
 
-#include <Ishiko/Tests/Core.hpp>
+#include <Ishiko/TestFramework/Core.hpp>
 
 class CompilerTests : public Ishiko::TestSequence
 {
