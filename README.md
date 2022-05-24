@@ -2,24 +2,29 @@
 
 Code to handle differences between operating systems.
 
+
 ## Contents
 
 - include: directory containing the public headers for the project.
 - tests: the tests for the project.
 
+
 ## Project Status
 
 [![ishiko-cpp](https://circleci.com/gh/ishiko-cpp/base-platform.svg?style=shield)](https://circleci.com/gh/ishiko-cpp/base-platform)
 
-This project is intended for use by its author only.
+This project is in early development and not ready for public use yet. 
+
 
 ## Usage
 
 No documentation available as of yet.
 
+
 ## Support
 
 None.
+
 
 ## License
 
