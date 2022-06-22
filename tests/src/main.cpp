@@ -12,7 +12,7 @@ using namespace Ishiko;
 
 int main(int argc, char* argv[])
 {
-    TestHarness theTestHarness("IshikoPlatform");
+    TestHarness theTestHarness("IshikoBasePlatform");
 
     TestSequence& theTests = theTestHarness.tests();
     theTests.append<OSTests>();
