@@ -49,7 +49,7 @@ jobs:
           name: "Install test dependency: Ishiko/C++ Tests/Core"
           command: cd /projects/ishiko/cpp && git clone https://github.com/ishiko-cpp/test-framework.git && cd test-framework/core/build/gnumake && make
       - run:
-          name: "Test: Ishiko/C++ Platform"
+          name: "Test: Ishiko/C++ BasePlatform"
           command: cd /projects/ishiko/cpp/base-platform/tests/build/gnumake && make && ./IshikoBasePlatformTests
 workflows:
   version: 2
