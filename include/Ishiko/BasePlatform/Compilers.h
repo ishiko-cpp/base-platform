@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020-2021 Xavier Leclercq
+    Copyright (c) 2020-2022 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
@@ -15,6 +15,10 @@
     #define ISHIKO_COMPILER ISHIKO_COMPILER_MSVC
 #else
     #error Unsupported or unrecognized compiler
+#endif
+
+#if !defined(NDEBUG)
+    #define ISHIKO_DEBUG 1
 #endif
 
 #endif
