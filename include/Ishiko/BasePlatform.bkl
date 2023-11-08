@@ -1,7 +1,7 @@
 setting ISHIKO_CPP_BASEPLATFORM_ROOT
 {
-    help = "Path to the Ishiko BasePlatform installation";
-    default = '$(ISHIKO_CPP)/base-platform';
+    help = "Path to the Ishiko/C++ BasePlatform installation";
+    default = '$(ISHIKO_CPP_ROOT)/base-platform';
 }
 
 template IshikoBasePlatform
