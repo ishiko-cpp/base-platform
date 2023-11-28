@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020-2021 Xavier Leclercq
+    Copyright (c) 2020-2023 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
@@ -13,6 +13,9 @@
 #elif defined(_WIN32)
     #define ISHIKO_OS_WINDOWS 2
     #define ISHIKO_OS ISHIKO_OS_WINDOWS
+#elif defined(__CYGWIN__)
+    #define ISHIKO_OS_CYGWIN 3
+    #define ISHIKO_OS ISHIKO_OS_CYGWIN
 #else
     #error Unsupported or unrecognized OS
 #endif
