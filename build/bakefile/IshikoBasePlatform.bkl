@@ -30,9 +30,8 @@ library IshikoBasePlatform
 
     headers
     {
-        ../../include/Ishiko/BasePlatform.h
-
-        ../../include/Ishiko/BasePlatform/Compilers.h
-        ../../include/Ishiko/BasePlatform/OS.h
+        ../../include/Ishiko/BasePlatform.hpp
+        ../../include/Ishiko/BasePlatform/Compilers.hpp
+        ../../include/Ishiko/BasePlatform/OS.hpp
     }
 }
