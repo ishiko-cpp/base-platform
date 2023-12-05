@@ -150,9 +150,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\Ishiko\BasePlatform.h" />
-    <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compilers.h" />
-    <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.h" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compilers.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWindows.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWinsock2.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

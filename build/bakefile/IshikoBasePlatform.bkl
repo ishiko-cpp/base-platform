@@ -30,9 +30,17 @@ library IshikoBasePlatform
 
     headers
     {
-        ../../include/Ishiko/BasePlatform.h
+        ../../include/Ishiko/BasePlatform.hpp
+        ../../include/Ishiko/BasePlatform/Compilers.hpp
+        ../../include/Ishiko/BasePlatform/OS.hpp
+    }
 
-        ../../include/Ishiko/BasePlatform/Compilers.h
-        ../../include/Ishiko/BasePlatform/OS.h
+    if ($(toolset) != gnu)
+    {
+        headers
+        {
+            ../../include/Ishiko/BasePlatform/windows/IshikoWindows.hpp
+            ../../include/Ishiko/BasePlatform/windows/IshikoWinsock2.hpp
+        }
     }
 }

@@ -4,8 +4,8 @@
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#ifndef _ISHIKO_BASEPLATFORM_OS_H_
-#define _ISHIKO_BASEPLATFORM_OS_H_
+#ifndef GUARD_ISHIKO_CPP_BASEPLATFORM_OS_HPP
+#define GUARD_ISHIKO_CPP_BASEPLATFORM_OS_HPP
 
 #if defined(__linux__)
     #define ISHIKO_OS_LINUX 1

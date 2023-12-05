@@ -17,13 +17,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\Ishiko\BasePlatform.h">
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compilers.h">
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compilers.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.h">
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWindows.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWinsock2.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
