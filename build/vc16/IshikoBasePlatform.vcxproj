@@ -153,6 +153,8 @@
     <ClInclude Include="..\..\include\Ishiko\BasePlatform.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compilers.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWindows.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWinsock2.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

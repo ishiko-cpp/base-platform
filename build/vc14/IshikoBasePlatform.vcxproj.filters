@@ -26,5 +26,11 @@
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWindows.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWinsock2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
