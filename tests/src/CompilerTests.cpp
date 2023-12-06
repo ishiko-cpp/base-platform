@@ -1,11 +1,11 @@
 /*
-    Copyright (c) 2020-2022 Xavier Leclercq
+    Copyright (c) 2020-2023 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
 #include "CompilerTests.hpp"
-#include "Ishiko/BasePlatform/Compilers.h"
+#include "Ishiko/BasePlatform/Compilers.hpp"
 
 using namespace Ishiko;
 
