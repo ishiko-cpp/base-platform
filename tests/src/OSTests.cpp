@@ -87,6 +87,8 @@ void OSTests::IshikoOSFamilyTest1(Test& test)
     ISHIKO_TEST_FAIL_IF_NEQ(os_family, "linux");
 #elif ISHIKO_OS == ISHIKO_OS_WINDOWS
     ISHIKO_TEST_FAIL_IF_NEQ(os_family, "windows");
+#else
+    #error Unsupported or unrecognized OS
 #endif
     ISHIKO_TEST_PASS();
 }
