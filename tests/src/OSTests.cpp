@@ -15,6 +15,7 @@ OSTests::OSTests(const TestNumber& number, const TestContext& context)
     append<HeapAllocationErrorsTest>("ISHIKO_OS test 1", IshikoOSTest1);
     append<HeapAllocationErrorsTest>("ISHIKO_OS test 2", IshikoOSTest2);
     append<HeapAllocationErrorsTest>("ISHIKO_OS test 3", IshikoOSTest3);
+    append<HeapAllocationErrorsTest>("Family test 1", IshikoOSFamilyTest1);
 }
 
 void OSTests::IshikoOSTest1(Test& test)
@@ -73,6 +74,19 @@ void OSTests::IshikoOSTest3(Test& test)
     ISHIKO_TEST_FAIL_IF_NEQ(value, 2);
 #else
     ISHIKO_TEST_FAIL();
+#endif
+    ISHIKO_TEST_PASS();
+}
+
+
+void OSTests::IshikoOSFamilyTest1(Test& test)
+{
+    std::string os_family = OS::Family();
+
+#if ISHIKO_OS == ISHIKO_OS_LINUX
+    ISHIKO_TEST_FAIL_IF_NEQ(os_family, "linux");
+#elif ISHIKO_OS == ISHIKO_OS_WINDOWS
+    ISHIKO_TEST_FAIL_IF_NEQ(os_family, "windows");
 #endif
     ISHIKO_TEST_PASS();
 }

@@ -150,8 +150,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\OS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\include\Ishiko\BasePlatform.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compilers.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\linkoptions.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWindows.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWinsock2.hpp" />
