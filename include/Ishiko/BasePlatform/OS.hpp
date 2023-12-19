@@ -7,6 +7,8 @@
 #ifndef GUARD_ISHIKO_CPP_BASEPLATFORM_OS_HPP
 #define GUARD_ISHIKO_CPP_BASEPLATFORM_OS_HPP
 
+#include <string>
+
 #if defined(__linux__)
     #define ISHIKO_OS_LINUX 1
     #define ISHIKO_OS ISHIKO_OS_LINUX
@@ -19,5 +21,14 @@
 #else
     #error Unsupported or unrecognized OS
 #endif
+
+namespace Ishiko
+{
+    class OS
+    {
+    public:
+        static const std::string& Family();
+    };
+}
 
 #endif

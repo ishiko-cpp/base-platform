@@ -32,6 +32,7 @@ library IshikoBasePlatform
     {
         ../../include/Ishiko/BasePlatform.hpp
         ../../include/Ishiko/BasePlatform/Compilers.hpp
+        ../../include/Ishiko/BasePlatform/linkoptions.hpp
         ../../include/Ishiko/BasePlatform/OS.hpp
     }
 
@@ -42,5 +43,10 @@ library IshikoBasePlatform
             ../../include/Ishiko/BasePlatform/windows/IshikoWindows.hpp
             ../../include/Ishiko/BasePlatform/windows/IshikoWinsock2.hpp
         }
+    }
+
+    sources
+    {
+        ../../src/OS.cpp
     }
 }
