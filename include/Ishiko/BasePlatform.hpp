@@ -8,6 +8,7 @@
 #define GUARD_ISHIKO_CPP_BASEPLATFORM_HPP
 
 #include "BasePlatform/Compilers.hpp"
+#include "BasePlatform/linkoptions.hpp"
 #include "BasePlatform/OS.hpp"
 
 #endif
