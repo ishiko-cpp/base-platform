@@ -1,11 +1,11 @@
 /*
-    Copyright (c) 2020-2023 Xavier Leclercq
+    Copyright (c) 2020-2024 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/base-platform/blob/main/LICENSE.txt
 */
 
-#ifndef GUARD_ISHIKO_CPP_BASEPLATFORM_COMPILERS_HPP
-#define GUARD_ISHIKO_CPP_BASEPLATFORM_COMPILERS_HPP
+#ifndef GUARD_ISHIKO_CPP_BASEPLATFORM_COMPILER_HPP
+#define GUARD_ISHIKO_CPP_BASEPLATFORM_COMPILER_HPP
 
 #if defined(__GNUC__)
     #define ISHIKO_COMPILER_GCC 1
