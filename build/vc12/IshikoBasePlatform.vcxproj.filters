@@ -20,7 +20,7 @@
     <ClInclude Include="..\..\include\Ishiko\BasePlatform.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compilers.hpp">
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compiler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\linkoptions.hpp">

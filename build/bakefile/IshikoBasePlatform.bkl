@@ -32,7 +32,7 @@ library IshikoBasePlatform
     headers
     {
         ../../include/Ishiko/BasePlatform.hpp
-        ../../include/Ishiko/BasePlatform/Compilers.hpp
+        ../../include/Ishiko/BasePlatform/Compiler.hpp
         ../../include/Ishiko/BasePlatform/linkoptions.hpp
         ../../include/Ishiko/BasePlatform/OS.hpp
     }
