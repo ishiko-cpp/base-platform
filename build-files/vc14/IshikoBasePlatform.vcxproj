@@ -157,6 +157,7 @@
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\Compiler.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\linkoptions.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\OS.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\BasePlatform\Runtime.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWindows.hpp" />
     <ClInclude Include="..\..\include\Ishiko\BasePlatform\windows\IshikoWinsock2.hpp" />
   </ItemGroup>

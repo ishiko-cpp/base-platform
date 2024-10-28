@@ -34,6 +34,7 @@ library IshikoBasePlatform
         ../../include/Ishiko/BasePlatform/Compiler.hpp
         ../../include/Ishiko/BasePlatform/linkoptions.hpp
         ../../include/Ishiko/BasePlatform/OS.hpp
+        ../../include/Ishiko/BasePlatform/Runtime.hpp
     }
 
     if ($(toolset) != gnu)
