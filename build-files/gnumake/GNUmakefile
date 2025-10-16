@@ -61,7 +61,7 @@ all: ../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoBasePlat
 	$(RANLIB) $@
 
 $(_builddir)IshikoBasePlatform_OS.o: ../../src/OS.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I../../include/Ishiko/BasePlatform -std=c++11 ../../src/OS.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I../../include/Ishiko/BasePlatform -std=c++14 ../../src/OS.cpp
 
 clean:
 	rm -f $(_builddir)*.o
