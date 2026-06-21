@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="https://nuime.org/schema/core/1">
-  <name>base-platform</name>
+  <name>IshikoBasePlatform</name>
   <targets>
     <target>
-      <name>base-platform-lib</name>
+      <name>lib</name>
       <labels>
         <label>nuime:product</label>
       </labels>
@@ -11,9 +11,9 @@
         <property name="nuime:test-suite">
           <target-ref>
             <location>
-              <url>https://github.com/ishiko-cpp/base-platform/tests/build-files/nuime/base-platform-tests.nuime</url>
+              <url>https://github.com/ishiko-cpp/base-platform/tests/build-files/nuime/IshikoBasePlatformTests.nuime</url>
             </location>
-            <name>base-platform-tests</name>
+            <name>tests</name>
           </target-ref>
         </property>
       </properties>
@@ -21,12 +21,12 @@
   </targets>
   <subprojects>
     <subproject>
-      <name>base-platform-tests</name>
+      <name>IshikoBasePlatformTests</name>
       <labels>
         <label>nuime:tests</label>
       </labels>
       <location>
-        <url>https://github.com/ishiko-cpp/base-platform/tests/build-files/nuime/base-platform-tests.nuime</url>
+        <url>https://github.com/ishiko-cpp/base-platform/tests/build-files/nuime/IshikoBasePlatformTests.nuime</url>
       </location>
     </subproject>
   </subprojects>
